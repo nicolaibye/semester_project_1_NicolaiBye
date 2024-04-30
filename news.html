@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg" href="images/ksm_logo_icon.svg">
     <script src="https://kit.fontawesome.com/dd4a452c26.js" crossorigin="anonymous"></script>
-    <title>KSM | Home</title>
+    <title>KSM | Exhibition Spaces</title>
 </head>
 <body>
     <header>
@@ -37,12 +37,12 @@
             <input type="checkbox" id="genre_checkbox">
             <label for="genre_checkbox"><i class="fa-solid fa-bars"></i></label>
             <ul class="genre_dropdown">
-                <li class="nav_active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="exhibitions.html">Exhibitions</a></li>
                 <li><a href="get_involved.html">Get Involved</a></li>
                 <li><a href="the_museum.html">The Museum</a></li>
                 <li><a href="our_policies.html">Our Policies</a></li>
-                <li><a href="news.html">News</a></li>
+                <li class="nav_active"><a href="news.html">News</a></li>
             </ul>
         </nav>
     </header>
@@ -50,56 +50,19 @@
     <main>
         <button><a href="our_policies.html"><i class="fa-solid fa-cookie-bite"></i></a></button>
         <section>
-            <h1>Explore <bold>Together</bold></h1>
-            <div>
-                <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.<br>
-                Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
-                <button><a href="exhibitions.html">Exhibitions</a></button>
-                <p>Entrance is free for all!</p>
-            </div> 
-            <img src="images/vr_kid.webp" alt="A young kid using a VR headset">
-        </section>
-
-        <section>
-            <h1>What is our <bold>goals?</bold></h1>
-            <img src="images/spacesuite.webp" alt="A human in a astronaut outfit">
-                <div>
-                    <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.<br>
-                    We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
-                    <button><a href="the_museum.html">Plan your day</a></button>
-                </div>
-        </section>
-
-        <section>
-            <h1>Explore</h1>
-            <div>
-                <h2>Young explorers</h2>
-                <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.<br>
-                You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.<br>
-                We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.<br>
-                During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.</p>
-                <button><a href="exhibitions.html">Become an explorer!</a></button>
-            </div>
-            <div>
-                <h2>Leading educators</h2>
-                <p>As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.<br>
-                Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.</p>
-                <button><a href="the_museum.html">Give us a call!</a></button>
-            </div>
-            <div>
-                <h2>Bright minds</h2>
-                <p>Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.</p>
-                <button><a href="get_involved.html">Get in touch!</a></button>
-            </div>
-        </section>
-
-        <section>
-            <span>Fun fact</span>
-            <p class="funfact"><bold>A cloud weighs around a million tonnes.</bold> A cloud typically has a volume of around 1km3 and a density of around 1.003kg per m3 – that's a density that’s around 0.4 per cent lower than the air surrounding it!</p>
-        </section>
-
-        <section>
             <h1>News</h1>
+            <form action="form_success.php" method="post">
+                <input type="checkbox" id="news_tag1" name="news_tag1" value="Cosmology">
+                <label for="news_tag1">Cosmology</label><br>
+                <input type="checkbox" id="news_tag2" name="news_tag2" value="Evolution">
+                <label for="news_tag2">Evolution</label><br>
+                <input type="checkbox" id="news_tag3" name="news_tag3" value="Biology">
+                <label for="news_tag3">Biology and Medicine</label><br>
+                <input type="checkbox" id="news_tag4" name="news_tag4" value="Robotics">
+                <label for="news_tag4">Robotics and AI</label><br>
+                <input type="checkbox" id="news_tag5" name="news_tag5" value="Ecology">
+                <label for="news_tag5">Ecology</label><br>
+            </form>
             <div>
                 <img src="images/museum_overview.jpg" alt="An overview of the museum space.">
                 <h2>Visiting Professor of Aeronautics</h2>
@@ -139,7 +102,7 @@
                 <label for="email"></label>
                 <input type="email" id="email" name="email" placeholder="E-mail">
                 <button><i class="fa-solid fa-envelope"></i></button>
-                <input type="submit" name="send" id="send" value="Send" class="newsletter_button">
+                <input type="submit" name="sign_up" id="sign_up" value="Sign up" class="newsletter_button">
             </form>
         </div>
     </footer>
