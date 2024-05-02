@@ -1,0 +1,274 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0px;
+}
+
+:root {
+    font-size: 62.5%;
+    --csm_black: #1c2321;
+    --csm_purple: #af69f0;
+    --csm_white: #fffafb;
+    --csm_red: #e8565c;
+    --csm_yellow: #faa916;
+    --csm_green: #c8e9a0;
+    --csm_blue: #5aa9e6;
+    --csm_dropshadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+* {
+    toutline: 1px solid red !important;
+} 
+
+/* Flexbox layout */
+
+html, body {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: fit-content;
+}
+
+main {
+    flex: auto;
+}
+
+footer {
+    height: fit-content;
+}
+
+body {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    background-color: var(--csm_white);
+}
+
+button, body {
+    text-transform: uppercase;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+nav, footer {
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin: 100px 100px 100px;
+}
+
+nav, section, footer {
+    display: grid;
+    grid-template-columns: repeat(12, 103px);
+}
+
+footer {
+    background-color: var(--csm_black);
+    padding: 48px 0px;
+    color: var(--csm_white);
+}
+
+footer a {
+    color: var(--csm_white);
+}
+
+footer p {
+    grid-column-start: 2;
+}
+
+footer ul {
+    grid-column-start: 5;
+    grid-column-end: span 2;
+}
+
+footer div {
+    grid-column-start: 8;
+    grid-column-end: span 4;
+}
+
+h1 {
+    font-size: 12.8rem;
+    font-weight: 300;
+}
+
+h2 {
+    text-transform: none;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 140%; /* 21px */
+    letter-spacing: 3px;
+}
+
+bold {
+    font-weight: 800;
+}
+
+button, .menu_icon {
+    padding: 20px 0px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: var(--csm_black);
+    border-width: 0px;
+    box-shadow: var(--csm_dropshadow);
+}
+
+button a {
+    color: var(--csm_yellow);
+    padding: 20px 28px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.menu_dropdown, #menu_checkbox {
+    display: none;
+}
+
+header a:focus + .menu_dropdown{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_dropdown {
+    background-color: var(--csm_purple);
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 120%;
+    padding: 20px;
+    max-width: 380px;
+    border-radius: 10px;
+    z-index: 100;
+    position: fixed;
+    top: 30px;
+    right: 15%;
+    box-shadow: var(--csm_dropshadow);
+}
+
+.menu_icon {
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    background-color: var(--csm_purple);
+    cursor: pointer;
+    z-index: 99;
+    display: flex;
+    box-sizing: border-box;
+    position: fixed;
+    top: 30px;
+    right: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.menu_dropdown a {
+    color: var(--csm_white);
+}
+
+.menu_dropdown a:hover {
+    text-decoration: underline;
+}
+
+.nav_active a{
+    text-decoration: underline;
+}
+
+nav {
+    height: 100px
+}
+
+nav div {
+    display: inline-flex;
+    align-items: center;
+}
+
+nav div i {
+    margin-right: 12px;
+    font-size: 2rem;
+}
+
+.nav_public {
+    grid-column-start: 5;
+    grid-column-end: span 2;
+}
+
+.nav_time {
+    grid-column-start: 7;
+    grid-column-end: span 3;
+}
+
+.nav_weather {
+    grid-column-start: 10;
+    grid-column-end: span 2;
+}
+
+nav a {
+    grid-column-end: span 3;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--csm_black);
+}
+
+.purple_text {
+    color: var(--csm_purple);
+}
+
+.red_text {
+    color: var(--csm_red);
+}
+
+.yellow_text {
+    color: var(--csm_yellow);
+}
+
+nav a bold {
+    font-size: 4.8rem;
+}
+
+#cookies_button {
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    cursor: pointer;
+    z-index: 99;
+    display: flex;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 15%;
+    right: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* nav */
+
