@@ -240,6 +240,7 @@ header a:focus + .menu_dropdown{
     height: 40px;
     padding: 0px;
     background-color: var(--csm_purple);
+    color: var(--csm_black);
     cursor: pointer;
     z-index: 99;
     display: flex;
