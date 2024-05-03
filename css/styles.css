@@ -203,7 +203,8 @@ header a:focus + .menu_dropdown{
 }
 
 nav {
-    height: 100px
+    height: 100px;
+    position: sticky;
 }
 
 nav div {
