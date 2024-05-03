@@ -76,30 +76,6 @@ nav, section, footer {
     grid-template-columns: repeat(12, 103px);
 }
 
-footer {
-    background-color: var(--csm_black);
-    padding: 48px 0px;
-    color: var(--csm_white);
-}
-
-footer a {
-    color: var(--csm_white);
-}
-
-footer p {
-    grid-column-start: 2;
-}
-
-footer ul {
-    grid-column-start: 5;
-    grid-column-end: span 2;
-}
-
-footer div {
-    grid-column-start: 8;
-    grid-column-end: span 4;
-}
-
 h1 {
     font-size: 12.8rem;
     font-weight: 300;
@@ -144,6 +120,100 @@ ul {
     list-style-type: none;
 }
 
+.purple_text {
+    color: var(--csm_purple);
+}
+
+.red_text {
+    color: var(--csm_red);
+}
+
+.yellow_text {
+    color: var(--csm_yellow);
+}
+
+#cookies_button {
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    cursor: pointer;
+    z-index: 99;
+    display: flex;
+    box-sizing: border-box;
+    position: fixed;
+    top: 30px;
+    right: 16.6%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--csm_black);
+    padding: 48px 0px;
+    color: var(--csm_white);
+}
+
+footer a {
+    color: var(--csm_white);
+    grid-column-start: 2;
+    grid-column-end: span 2;
+}
+
+footer ul {
+    grid-column-start: 5;
+    grid-column-end: span 2;
+}
+
+footer ul li{
+    line-height: 180%; 
+}
+
+footer div {
+    grid-column-start: 8;
+    grid-column-end: span 5;
+}
+
+.newsletter_signup {
+    color: var(--CSM-White, #FFFAFB);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 16px;
+    background-color: var(--csm_black);
+    border: 2px solid var(--csm_purple);
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+    left: -18px;
+    z-index: 2;
+}
+
+.newsletter_button {
+    height: 49px;
+    width: 50px;
+    background-color: var(--csm_purple);
+    border-radius: 10px;
+    border: 2px solid var(--csm_purple);
+    position: relative;
+    left: -38px;
+    top: 22px;
+    z-index: 1;
+}
+
+.newsletter_button_icon {
+    position: relative;
+    z-index: 3;
+    top: -37px;
+    left: 431px;
+    color: var(--csm_black);
+    font-size: 2rem;
+}
+
+/* nav */
+
 .menu_dropdown, #menu_checkbox {
     display: none;
 }
@@ -162,9 +232,6 @@ header a:focus + .menu_dropdown{
     max-width: 380px;
     border-radius: 10px;
     z-index: 100;
-    position: fixed;
-    top: 30px;
-    right: 15%;
     box-shadow: var(--csm_dropshadow);
 }
 
@@ -177,18 +244,16 @@ header a:focus + .menu_dropdown{
     z-index: 99;
     display: flex;
     box-sizing: border-box;
-    position: fixed;
-    top: 30px;
-    right: 15%;
     justify-content: center;
     align-items: center;
 }
 
-.menu_close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
+.menu_dropdown, .menu_icon {
+    position: fixed;
+    top: 30px;
+    right: 20%;
 }
+
 
 .menu_dropdown a {
     color: var(--csm_white);
@@ -204,7 +269,9 @@ header a:focus + .menu_dropdown{
 
 nav {
     height: 100px;
-    position: sticky;
+    position: fixed;
+    width: 100vw;
+    background-color: var(--csm_white);
 }
 
 nav div {
@@ -239,37 +306,7 @@ nav a {
     gap: 12px;
     color: var(--csm_black);
 }
-
-.purple_text {
-    color: var(--csm_purple);
-}
-
-.red_text {
-    color: var(--csm_red);
-}
-
-.yellow_text {
-    color: var(--csm_yellow);
-}
-
-nav a bold {
+nav a bold, footer a bold {
     font-size: 4.8rem;
+    font-weight: 600;
 }
-
-#cookies_button {
-    width: 40px;
-    height: 40px;
-    padding: 0px;
-    cursor: pointer;
-    z-index: 99;
-    display: flex;
-    box-sizing: border-box;
-    position: fixed;
-    bottom: 15%;
-    right: 15%;
-    justify-content: center;
-    align-items: center;
-}
-
-/* nav */
-
