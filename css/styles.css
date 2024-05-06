@@ -142,7 +142,7 @@ ul {
     box-sizing: border-box;
     position: fixed;
     top: 30px;
-    right: 16.6%;
+    right: 7.1%;
     justify-content: center;
     align-items: center;
 }
@@ -252,7 +252,7 @@ header a:focus + .menu_dropdown{
 .menu_dropdown, .menu_icon {
     position: fixed;
     top: 30px;
-    right: 20%;
+    right: 11.4%;
 }
 
 
@@ -310,4 +310,155 @@ nav a {
 nav a bold, footer a bold {
     font-size: 4.8rem;
     font-weight: 600;
+}
+
+/* generic cards */
+
+.base_card_container {
+    height: fit-content;
+    width: 324px;
+    padding: 32px;
+    background-color: var(--csm_purple);
+    border-radius: 10px;
+}
+
+.base_card_container img{
+    width: 324px;
+    height: 212px;
+    object-fit: cover;
+    margin-bottom: 24px;
+
+}
+
+/* home page */
+
+.opening_section {
+    min-height: 90vh;
+    align-content: center;
+}
+
+.opening_section bold{
+    color: var(--csm_purple);
+}
+
+.opening_section div{
+    grid-template-columns: repeat(5, 103px);
+    grid-column-end: span 5;
+}
+
+.opening_section div {
+    grid-column-start: 1;
+}
+
+.opening_section img {
+    position: absolute;
+    z-index: -1;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.header_cta {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    column-gap: 138px;
+}
+
+.goals_home_section div {
+    grid-column-end: span 6;
+    grid-column-start: 7;
+    margin: 48px;
+}
+
+.goals_home_section div button {
+    margin-top: 48px;
+}
+
+.goals_home_section h1 {
+    text-align: right;
+    grid-column-end: span 12;
+}
+
+.goals_home_section bold {
+    color: var(--csm_red);
+}
+
+.goals_home_section img {
+    position: absolute;
+    z-index: -1;
+    height: 852px;
+    left: -20%;
+}
+
+/* set left to 0px for everything above 1440 wide
+.goals_home_section img {
+    position: absolute;
+    z-index: -1;
+    height: 852px;
+    left: -20%;
+}
+*/
+
+.goals_home_section {
+    max-height: 874px;
+}
+
+#goals_home_background_color {
+    position: absolute;
+    background-color: var(--csm_yellow);
+    height: 540px;
+    width: 100%;
+    margin: 0px;
+    left: 0px;
+    z-index: -2;
+    align-self: flex-end;
+}
+
+.explore_home_section div{
+    grid-column-end: span 4;
+}
+
+.explore_home_section div p, .explore_home_section div button{
+    margin-top: 24px;
+}
+
+.young_explorers {
+    grid-column-start: 1;
+}
+
+.leading_educators {
+    grid-column-start: 5;
+    justify-self: center;
+    background-color: var(--csm_red);
+}
+
+.bright_minds {
+    grid-column-start: 9;
+    justify-self: flex-end;
+    background-color: var(--csm_yellow);
+}
+
+.home_funfact {
+    background-color: var(--csm_black);
+    padding: 48px 100px;
+    margin: 0px;
+}
+
+.home_funfact p {
+    color: var(--csm_purple);
+    grid-column-end: span 12;
+}
+
+.home_funfact bold {
+    color: var(--csm_red);
+}
+
+.home_funfact_heading {
+    position: relative;
+    top: 15px;
+    left: 100px;
+    color: var(--csm_black);
+    font-size: 56px;
+    font-weight: 700;
+    grid-column-end: span 3;
 }
