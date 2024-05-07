@@ -510,3 +510,29 @@ nav a bold, footer a bold {
 .green_card {
     background-color: var(--csm_green);
 }
+
+/* news */
+
+#news_categories {
+    display: flex;
+    grid-column-end: span 6;
+    grid-column-start: 5;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    column-gap: 10px;
+    row-gap: 28px;
+}
+
+#news_categories input {
+    height: 30px;
+    width: 30px;
+    border-width: 2px;
+    border-color: var(--csm_red);
+}
+
+.news_tag2 {
+    flex-basis: 63%;
+}
