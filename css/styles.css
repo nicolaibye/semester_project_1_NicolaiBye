@@ -53,7 +53,7 @@ body {
     background-color: var(--csm_white);
 }
 
-button, body {
+button, body, #send {
     text-transform: uppercase;
 }
 
@@ -100,7 +100,7 @@ bold {
     font-weight: 800;
 }
 
-button, .menu_icon {
+button, .menu_icon, #send {
     padding: 20px 0px;
     font-size: 1.8rem;
     font-weight: 700;
@@ -110,7 +110,7 @@ button, .menu_icon {
     box-shadow: var(--csm_dropshadow);
 }
 
-button a {
+button a, #send {
     color: var(--csm_yellow);
     padding: 20px 28px;
 }
@@ -624,4 +624,60 @@ nav a bold, footer a bold {
     border: solid white;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
+}
+
+/* get involved */
+
+.get_involved_section p, .get_involved_section h1{
+    grid-column-end: span 12;
+}
+
+.contact_us_section {
+    margin-top: 0px;
+    justify-content: center;
+}
+
+.contact_form {
+    display: grid;
+    grid-template-columns: repeat(8, 103px);
+    grid-column-start: 3;
+    row-gap: 48px;
+}
+
+.contact_form p, .contact_form h1 {
+    grid-column-end: span 8;
+}
+
+.contact_form_fields {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-end: span 8;
+    row-gap: 24px;
+}
+
+#firstname, #lastname, #email, #subject {
+    flex-basis: 43%;
+}
+
+#firstname, #lastname, #email, #subject, #message {
+    padding: 20px;
+    color: var(--csm_black);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 16px;
+    background-color: var(--csm_white);
+    border: 2px solid var(--csm_purple);
+    border-radius: 10px;
+}
+
+#message {
+    flex-basis: 100%;
+    resize: vertical;
+    border: 2px solid var(--csm_red);
+}
+
+.contact_form_fields #lastname{
+    justify-self: flex-end;
 }
