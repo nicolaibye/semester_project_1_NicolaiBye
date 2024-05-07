@@ -529,10 +529,99 @@ nav a bold, footer a bold {
 #news_categories input {
     height: 30px;
     width: 30px;
-    border-width: 2px;
-    border-color: var(--csm_red);
+    cursor: pointer;
 }
 
 .news_tag2 {
     flex-basis: 63%;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 8px;
+    cursor: pointer;
+} 
+
+.checkmark {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: #eee;
+}
+  
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+.checkmark_purple {
+    background-color: #eee;
+}
+
+.container input:checked ~ .checkmark_purple {
+    background-color: var(--csm_purple);
+}
+
+.checkmark_yellow {
+    background-color: #eee;
+}
+
+.container input:checked ~ .checkmark_yellow {
+    background-color: var(--csm_yellow);
+}
+
+.checkmark_red {
+    background-color: #eee;
+}
+
+.container input:checked ~ .checkmark_red {
+    background-color: var(--csm_red);
+}
+
+.checkmark_blue {
+    background-color: #eee;
+}
+
+.container input:checked ~ .checkmark_blue {
+    background-color: var(--csm_blue);
+}
+
+.checkmark_green {
+    background-color: #eee;
+}
+
+.container input:checked ~ .checkmark_green {
+    background-color: var(--csm_green);
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 11px;
+    top: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
 }

@@ -51,16 +51,31 @@
         <section class="explore_home_section">
             <h1>News</h1>
             <form action="form_success.php" method="post" id="news_categories">
-                <input type="checkbox" id="news_tag1" name="news_tag1" value="Cosmology">
-                <label for="news_tag1">Cosmology</label><br>
-                <input type="checkbox" id="news_tag2" name="news_tag2" value="Evolution">
-                <label for="news_tag2" class="news_tag2">Evolution</label><br>
-                <input type="checkbox" id="news_tag3" name="news_tag3" value="Biology">
-                <label for="news_tag3">Biology and Medicine</label><br>
-                <input type="checkbox" id="news_tag4" name="news_tag4" value="Robotics">
-                <label for="news_tag4">Robotics and AI</label><br>
-                <input type="checkbox" id="news_tag5" name="news_tag5" value="Ecology">
-                <label for="news_tag5">Ecology</label><br>
+                <label for="news_tag1" class="container">
+                <input class="checkbox" type="checkbox" id="news_tag1" name="news_tag1" value="Cosmology">
+                <span class="checkmark checkmark_purple"></span>
+                Cosmology
+                </label><br>
+
+                <label for="news_tag2" class="container news_tag2">
+                <input class="checkbox" type="checkbox" id="news_tag2" name="news_tag2" value="Evolution">
+                <span class="checkmark checkmark_yellow"></span>
+                Evolution</label><br>
+
+                <label class="container" for="news_tag3">
+                <input class="checkbox" type="checkbox" id="news_tag3" name="news_tag3" value="Biology">
+                <span class="checkmark checkmark_red"></span>
+                Biology and Medicine</label><br>
+
+                <label class="container" for="news_tag4">
+                <input class="checkbox" type="checkbox" id="news_tag4" name="news_tag4" value="Robotics">
+                <span class="checkmark checkmark_blue"></span>
+                Robotics and AI</label><br>
+
+                <label class="container" for="news_tag5">
+                <input class="checkbox" type="checkbox" id="news_tag5" name="news_tag5" value="Ecology">
+                <span class="checkmark checkmark_green"></span>
+                Ecology</label><br>
             </form>
             <div class="base_card_container young_explorers">
                 <img src="images/museum_overview.jpg" alt="An overview of the museum space.">
