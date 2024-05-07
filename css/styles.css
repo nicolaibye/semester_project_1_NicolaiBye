@@ -68,12 +68,13 @@ nav, footer {
 }
 
 section {
-    margin: 100px 100px 100px;
+    margin: 248px 100px 100px;
 }
 
 nav, section, footer {
     display: grid;
     grid-template-columns: repeat(12, 103px);
+    row-gap: 24px;
 }
 
 h1 {
@@ -214,16 +215,13 @@ footer div {
 
 /* nav */
 
-.menu_dropdown, #menu_checkbox {
-    display: none;
-}
-
-header a:focus + .menu_dropdown{
+.menu_dropdown:target {
     display: flex;
     flex-direction: column;
 }
 
 .menu_dropdown {
+    display: none;
     background-color: var(--csm_purple);
     font-size: 3.6rem;
     font-weight: 500;
@@ -335,6 +333,7 @@ nav a bold, footer a bold {
 .opening_section {
     min-height: 90vh;
     align-content: center;
+    margin: 100px;
 }
 
 .opening_section bold{
@@ -401,6 +400,7 @@ nav a bold, footer a bold {
 
 .goals_home_section {
     max-height: 874px;
+    row-gap: 0px;
 }
 
 #goals_home_background_color {
@@ -418,7 +418,7 @@ nav a bold, footer a bold {
     grid-column-end: span 4;
 }
 
-.explore_home_section div p, .explore_home_section div button{
+.explore_home_section div p, .explore_home_section div button, .exhibition_card_container p, .exhibition_card_container button{
     margin-top: 24px;
 }
 
@@ -461,4 +461,53 @@ nav a bold, footer a bold {
     font-size: 56px;
     font-weight: 700;
     grid-column-end: span 3;
+    z-index: -1;
+}
+
+/* exhibitions */
+
+.exhibition_container {
+    position: relative;
+    z-index: -1;
+}
+
+.exhibition_card_container {
+    width: 556px;
+    padding: 64px;
+}
+
+.exhibition_container img{
+    position: absolute;
+    top: 0;
+    right: -516px;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 20px 20px 0px;
+    z-index: -2;
+}
+
+.exhibition_spaces div{
+    grid-column-end: span 7;
+}
+
+.exhibition_spaces h1{
+    margin-bottom: 48px;
+    grid-column-end: span 12;
+}
+
+.yellow_card {
+    background-color: var(--csm_yellow);
+}
+
+.red_card {
+    background-color: var(--csm_red);
+}
+
+.blue_card {
+    background-color: var(--csm_blue);
+}
+
+.green_card {
+    background-color: var(--csm_green);
 }
