@@ -94,6 +94,7 @@ a {
 p, .our_policies bold {
     line-height: 140%; /* 21px */
     letter-spacing: 3px;
+    text-align: justify;
 }
 
 bold {
@@ -484,6 +485,7 @@ nav a bold, footer a bold {
     height: 100%;
     object-fit: cover;
     border-radius: 0px 20px 20px 0px;
+    z-index: -1;
 }
 
 .exhibition_spaces div{
@@ -621,14 +623,14 @@ nav a bold, footer a bold {
     top: 7px;
     width: 5px;
     height: 10px;
-    border: solid white;
+    border: solid var(--csm_black);
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
 }
 
 /* get involved */
 
-.get_involved_section p, .get_involved_section h1, .our_policies p, .our_policies h1, .our_policies ul, .partical_info p{
+.get_involved_section p, .get_involved_section h1, .our_policies p, .our_policies h1, .our_policies ul{
     grid-column-end: span 12;
 }
 
@@ -639,6 +641,7 @@ nav a bold, footer a bold {
 .contact_us_section {
     margin-top: 0px;
     justify-content: center;
+    overflow: clip;
 }
 
 .contact_form {
@@ -727,8 +730,35 @@ nav a bold, footer a bold {
     padding-top: 10px;
 }
 
-.partical_info {
-    grid-column-end: span 12;
+.pratical_info p {
+    
+    grid-column-start: 3;
+    grid-column-end: span 8;
+}
+
+.fa-square, .fa-play, .fa-circle {
+    position: absolute;
+    font-size: 40rem;
+}
+
+.fa-square {
+    color: var(--csm_purple);
+    top: -30px;
+    left: -70px;
+    transform: rotate(45deg);
+}
+
+.fa-play {
+    color: var(--csm_yellow);
+    top: 2120px;
+    left: -70px;
+    transform: rotate(80deg);
+}
+
+.fa-circle {
+    color: var(--csm_red);
+    top: 800px;
+    right: -200px;
 }
 
 /* our policies */
@@ -745,4 +775,59 @@ nav a bold, footer a bold {
 
 .our_policies h1 {
     text-align: left;
+}
+
+/* news article */
+
+.color_overlay_news {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-blend-mode: screen, color, normal;
+    height: 80vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.purple_img {
+    background: linear-gradient(0deg, rgba(175, 105, 240, 0.70) 0%, rgba(175, 105, 240, 0.70) 100%), linear-gradient(0deg, var(--CSM-Purple, #AF69F0) 0%, var(--CSM-Purple, #AF69F0) 100%), url(../images/museum_overview.jpg) lightgray 50% / cover no-repeat;
+}
+
+.yellow_img {
+    background: linear-gradient(0deg, rgba(250, 169, 22, 0.70) 0%, rgba(250, 169, 22, 0.70) 100%), linear-gradient(0deg, var(--CSM-Yellow, #FAA916) 0%, var(--CSM-Yellow, #FAA916) 100%), url(../images/bottom_floor.jpg) lightgray 50% / cover no-repeat;
+}
+
+.red_img {
+    background: linear-gradient(0deg, rgba(232, 86, 92, 0.70) 0%, rgba(232, 86, 92, 0.70) 100%), linear-gradient(0deg, var(--CSM-Red, #E8565C) 0%, var(--CSM-Red, #E8565C) 100%), url(../images/abstract_energy.jpg) lightgray 50% / cover no-repeat;
+}
+
+.news_article_header h1, .news_article_header p{
+    position: relative;
+    grid-column-end: span 12;
+}
+
+.news_article_header {
+    row-gap: 0px;
+    margin: 47.5vh 100px 100px;
+}
+
+.news_article_bodytext {
+    margin: 100px;
+}
+
+.news_article_bodytext p {
+    grid-column-end: span 8;
+}
+
+.news_article_bodytext div {
+    grid-column-start: 10;
+    grid-column-end: span 3;
+    grid-template-columns: repeat(3, 103px);
+}
+
+.news_article_person_of_interest img {
+    object-fit: cover;
+    width: 310px;
+    height: 400px;
+    margin-bottom: 20px;
 }
