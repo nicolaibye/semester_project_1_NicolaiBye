@@ -91,7 +91,7 @@ a {
     text-decoration: none;
 }
 
-p {
+p, .our_policies bold {
     line-height: 140%; /* 21px */
     letter-spacing: 3px;
 }
@@ -176,7 +176,7 @@ footer div {
     grid-column-end: span 5;
 }
 
-.newsletter_signup {
+.newsletter_signup{
     color: var(--CSM-White, #FFFAFB);
     font-family: Inter;
     font-size: 15px;
@@ -628,8 +628,12 @@ nav a bold, footer a bold {
 
 /* get involved */
 
-.get_involved_section p, .get_involved_section h1{
+.get_involved_section p, .get_involved_section h1, .our_policies p, .our_policies h1, .our_policies ul, .partical_info p{
     grid-column-end: span 12;
+}
+
+.get_involved_section h1{
+    text-align: center;
 }
 
 .contact_us_section {
@@ -642,10 +646,12 @@ nav a bold, footer a bold {
     grid-template-columns: repeat(8, 103px);
     grid-column-start: 3;
     row-gap: 48px;
+    grid-column-end: span 8;
 }
 
 .contact_form p, .contact_form h1 {
     grid-column-end: span 8;
+    justify-content: center;
 }
 
 .contact_form_fields {
@@ -653,10 +659,11 @@ nav a bold, footer a bold {
     flex-wrap: wrap;
     grid-column-end: span 8;
     row-gap: 24px;
+    justify-content: space-between;
 }
 
 #firstname, #lastname, #email, #subject {
-    flex-basis: 43%;
+    flex-basis: 44%;
 }
 
 #firstname, #lastname, #email, #subject, #message {
@@ -678,6 +685,64 @@ nav a bold, footer a bold {
     border: 2px solid var(--csm_red);
 }
 
-.contact_form_fields #lastname{
-    justify-self: flex-end;
+#send {
+    margin: auto;
+}
+
+/* the museum */
+
+.the_museum_info h1{
+    grid-column-end: span 12;
+    text-align: center;
+}
+
+.the_museum_flex_info {
+    display: grid;
+    grid-template-columns: repeat(4, 103px);
+    grid-column-start: 3;
+    row-gap: 28px;
+    grid-column-end: span 4;
+}
+
+.the_museum_flex_info div{
+    display: grid;
+    grid-template-columns: repeat(3, 103px);
+    grid-column-end: span 3;
+}
+
+.the_museum_flex_info div i{
+    justify-self: center;
+    font-size: 2.4rem;
+}
+
+.the_museum_time {
+    width: 134px;
+}
+
+.the_museum_phone, .the_museum_adress {
+    grid-column-end: span 2;
+}
+
+.museum_time, .fa-location-dot {
+    padding-top: 10px;
+}
+
+.partical_info {
+    grid-column-end: span 12;
+}
+
+/* our policies */
+
+.our_policies li{
+    line-height: 140%; /* 21px */
+    letter-spacing: 3px;
+}
+
+.our_policies *, .our_policies ul li {
+    grid-column-end: span 12;
+    list-style-type: inherit;
+}
+
+.our_policies h1 {
+    text-align: left;
 }
