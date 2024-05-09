@@ -831,3 +831,91 @@ nav a bold, footer a bold {
     height: 400px;
     margin-bottom: 20px;
 }
+
+/* exhibition spaces */
+
+.hero_img {
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.exhibition_space_hero {
+    position: absolute;
+    background-blend-mode: screen, color, normal;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.exhibition_space_cards {
+    margin-top: -228px;
+    justify-items: center;
+}
+
+.exhibition_space_cards div {
+    grid-column-end: span 4;
+    padding-bottom: 22px;
+}
+
+.exhibition_space_cards div *{
+    margin-bottom: 10px;
+}
+
+.exhibition_space_header {
+    height: 100vh;
+    grid-template-rows: auto 1fr;
+}
+
+.exhibition_space_header h1{
+    grid-column-end: span 9;
+}
+
+.exhibition_space_header p{
+    grid-column-end: span 6;
+    height: min-content;
+}
+
+.cosmology_header {
+    background: linear-gradient(0deg, rgba(175, 105, 240, 0.70) 0%, rgba(175, 105, 240, 0.70) 100%), linear-gradient(0deg, var(--csm_purple, #af69f0) 0%, var(--csm_purple, #af69f0) 100%), url(../images/moon_phases.jpg) lightgray 50% / cover no-repeat;
+}
+
+.cosmology_card {
+    background-color: var(--csm_purple); 
+}
+
+.evolution_header {
+    background: linear-gradient(0deg, rgba(250, 169, 22, 0.70) 0%, rgba(250, 169, 22, 0.70) 100%), linear-gradient(0deg, var(--CSM-Yellow, #faa916) 0%, var(--CSM-Yellow, #faa916) 100%), url(../images/skeletons.jpg) lightgray 50% / cover no-repeat;
+}
+
+.evolution_card {
+    background-color: var(--csm_yellow); 
+}
+
+.biology_header {
+    background: linear-gradient(0deg, rgba(232, 86, 92, 0.70) 0%, rgba(232, 86, 92, 0.70) 100%), linear-gradient(0deg, var(--CSM-Red, #E8565C) 0%, var(--CSM-Red, #E8565C) 100%), url(../images/heart_figure.jpg) lightgray 50% / cover no-repeat;
+}
+
+.biology_card {
+    background-color: var(--csm_red); 
+}
+
+.robotics_header {
+    background: linear-gradient(0deg, rgba(90, 169, 230, 0.70) 0%, rgba(90, 169, 230, 0.70) 100%), linear-gradient(0deg, var(--csm_blue, #5AA9E6) 0%, var(--csm_blue, #5AA9E6) 100%), url(../images/teenager_vr_painting.jpg) lightgray 50% / cover no-repeat;
+}
+
+.robotics_card {
+    background-color: var(--csm_blue); 
+}
+
+.ecology_header {
+    background: linear-gradient(0deg, rgba(200, 233, 160, 0.70) 0%, rgba(200, 233, 160, 0.70) 100%), linear-gradient(0deg, var(--csm_green, #C8E9A0) 0%, var(--csm_green, #C8E9A0) 100%), url(../images/teenager_microscope.jpg) lightgray 50% / cover no-repeat;
+}
+
+.ecology_card {
+    background-color: var(--csm_green); 
+}
