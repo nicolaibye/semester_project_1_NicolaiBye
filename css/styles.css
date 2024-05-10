@@ -39,6 +39,8 @@ header {
 
 main {
     flex: auto;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 
 footer {
@@ -55,11 +57,6 @@ body {
 
 button, body, #send {
     text-transform: uppercase;
-}
-
-main {
-    margin: 0 auto;
-    max-width: 1440px;
 }
 
 nav, footer {
@@ -918,4 +915,58 @@ nav a bold, footer a bold {
 
 .ecology_card {
     background-color: var(--csm_green); 
+}
+
+/* Tablet */
+
+@media (max-width: 1435px) {
+
+    nav, section, footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    nav a {
+        margin: 0 40px;
+    }
+
+    .nav_weather {
+        display: none;
+    }
+
+    .nav_public {
+        display: none;
+    }
+
+    footer {
+        justify-content: space-evenly;
+    }
+
+    section {
+        margin: 100px 40px 40px;
+    }
+
+    .newsletter_button_icon {
+        position: relative;
+        z-index: 3;
+        top: 2px;
+        left: -78px;
+        color: var(--csm_black);
+        font-size: 2rem;
+    }
+
+    /* home */
+
+    .opening_section {
+        margin: 40px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+
 }
