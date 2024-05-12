@@ -82,6 +82,8 @@ h1 {
 h2 {
     text-transform: none;
     font-weight: 500;
+    font-size: 3.6rem;
+    line-height: 100%;
 }
 
 a {
@@ -640,7 +642,6 @@ nav a bold, footer a bold {
 .contact_us_section {
     margin-top: 0px;
     justify-content: center;
-    overflow: clip;
 }
 
 .contact_form {
@@ -649,6 +650,7 @@ nav a bold, footer a bold {
     grid-column-start: 3;
     row-gap: 48px;
     grid-column-end: span 8;
+    z-index: 1;
 }
 
 .contact_form p, .contact_form h1 {
@@ -669,14 +671,13 @@ nav a bold, footer a bold {
 }
 
 #firstname, #lastname, #email, #subject, #message {
-    padding: 20px;
     color: var(--csm_black);
     font-family: Inter;
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
     padding: 16px;
-    background-color: var(--csm_white);
+    background-color: rgba(255, 250, 251, 0.25);
     border: 2px solid var(--csm_purple);
     border-radius: 10px;
 }
@@ -725,6 +726,12 @@ nav a bold, footer a bold {
     grid-column-end: span 2;
 }
 
+.the_museum_map {
+    width: 412px;
+    height: 412px;
+    border: 0;
+}
+
 .museum_time, .fa-location-dot {
     padding-top: 10px;
 }
@@ -745,6 +752,7 @@ nav a bold, footer a bold {
     top: -30px;
     left: -70px;
     transform: rotate(45deg);
+    z-index: -1;
 }
 
 .fa-play {
@@ -756,8 +764,9 @@ nav a bold, footer a bold {
 
 .fa-circle {
     color: var(--csm_red);
-    top: 800px;
-    right: -200px;
+    top: 880px;
+    right: 40px;
+    z-index: -1;
 }
 
 /* our policies */
@@ -816,6 +825,10 @@ nav a bold, footer a bold {
 
 .news_article_bodytext p {
     grid-column-end: span 8;
+}
+
+.news_only_text p {
+    grid-column-end: span 12;   
 }
 
 .news_article_bodytext div {
@@ -984,7 +997,6 @@ nav a bold, footer a bold {
 
     .newsletter_button {
         left: -20px;
-        top: 22px;
     }
 
     .newsletter_button_icon {
@@ -1119,11 +1131,319 @@ nav a bold, footer a bold {
         border-radius: 0px;
         margin: 24px 0px 0px;
     }
+
+    /* exhibitons */
+
+    .exhibition_space_cards div {
+        grid-column-end: span 8;
+    }
+
+    /* get involved */
+
+    .get_involved_section p, .get_involved_section h1, .our_policies p, .our_policies h1, .our_policies ul {
+        grid-column-end: span 8;
+    }
+
+    .contact_form {
+        grid-template-columns: repeat(8, 94px);
+        grid-column-start: 1;
+    }
+
+    /* the museum */
+
+    .the_museum_flex_info {
+        grid-template-columns: repeat(4, 94px);
+        grid-column: 1 / span 4;
+    }
+
+    .the_museum_map {
+        width: 376px;
+        height: 376px;
+    }
+
+    .fa-square {
+        top: -81px;
+        left: -125px;
+    }
+
+    .pratical_info p {
+        grid-column-start: 1;
+    }
+
+    .contact_form h1 {
+        text-align: center;
+    }
+
+    .fa-play {
+        top: 1926px;
+        left: -92px;
+    }
+
+    /* news */
+
+    #news_categories {
+        grid-column-start: 1;
+    }
+
+    .first_section {
+        margin-top: 248px;
+    }
+
+    /* news article */
+
+    .news_article_header {
+        margin: 55vh 40px 40px;
+    }
+
+    .news_article_bodytext {
+        margin: 100px 40px;
+    }
+
+    .news_article_bodytext p {
+        grid-column-end: span 5;
+    }
+
+    .news_only_text p {
+        grid-column-end: span 8;   
+    }
+
+    .news_article_bodytext div {
+        position: relative;
+        max-width: 244px;
+        grid-column-start: 6;
+        grid-template-columns: repeat(3, 94px);
+        left: 40px;
+    }
+
+    .news_article_person_of_interest img {
+        width: 244px;
+    }
+
 }
 
 /* Mobile */
 
 @media (max-width: 834px) {
 
+    main {
+        max-width: 428px;
+    }
+
+    section {
+        margin: 148px 20px 20px;
+    }
+    
+    nav, section, footer {
+        grid-template-columns: repeat(4, 97px);
+        row-gap: 36px;
+    }
+
+    h1 {
+        font-size: 7rem;
+        text-align: center;
+    }
+
+    .nav_time {
+        display: none;
+    }
+
+    .menu_dropdown, .menu_icon {
+        right: 80px;
+    }
+
+    #cookies_button {
+        right: 20px;
+    }
+
+    footer ul {
+        grid-column-start: 3;
+        grid-column-end: span 2;
+    }
+
+    footer a {
+        grid-column-start: 1;
+    }
+
+    footer div {
+        grid-column-start: 1;
+        grid-column-end: span 4;
+    }
+
+    .newsletter_signup {
+        width: 280px;
+        left: 0px;
+    }
+
+    .newsletter_button {
+        left: -22px;
+    }
+
+    .newsletter_button_icon {
+        top: -37px;
+        left: 329px;
+    }
+
+    /* home */
+
+    .opening_section {
+        margin: 148px 20px 100px;
+    }
+
+    .opening_section h1 {
+        grid-column-end: span 4;
+    }
+
+    .opening_section div {
+        grid-template-columns: repeat(4, 97px);
+    }
+
+    .opening_section img {
+        position: static;
+        grid-column-end: span 4;
+        height: auto;
+        width: 100%;
+    }
+
+    .header_cta {
+        column-gap: 48px;
+    }
+
+    .goals_home_section h1 {
+        grid-column-end: span 4;
+        top: -270px;
+        text-align: center;
+    }
+
+    .goals_home_section div {
+        grid-column-end: span 4;
+        grid-column-start: 1;
+        top: -320px;
+    }
+
+    .goals_home_section img {
+        height: 395px;
+        left: -26%;
+        bottom: -1411px;
+    }
+
+    .home_funfact_heading {
+        left: 20px;
+    }
+
+    .home_funfact {
+        padding: 36px 20px;
+    }
+
+    /* exhibiton spaces */
+
+    .exhibition_spaces h1 {
+        grid-column-end: span 4;
+        margin-bottom: 0px;
+    }
+
+    .exhibition_spaces div {
+        grid-column-end: span 4;
+    }
+
+    .exhibition_card_container {
+        padding: 32px;
+    }
+
+    /* exhibitons */
+
+    .exhibition_space_cards div {
+        grid-column-end: span 4;
+    }
+
+    /* get involved */
+
+    .get_involved_section p, .get_involved_section h1, .our_policies p, .our_policies h1, .our_policies ul {
+        grid-column-end: span 4;
+    }
+
+    .contact_form {
+        grid-template-columns: repeat(4, 97px);
+        row-gap: 36px;
+        margin-top: 100px;
+    }
+
+    #firstname, #lastname, #email, #subject, #message {
+        padding: 16px;
+        flex-basis: 100%;
+    }
+
+    .contact_form_fields {
+        grid-column-end: span 4;
+    }
+
+    /* the museum */
+
+    .the_museum_flex_info {
+        grid-template-columns: repeat(4, 94px);
+        grid-column: 1 / span 4;
+    }
+
+    .the_museum_map {
+        width: 376px;
+        height: 376px;
+    }
+
+    .fa-square {
+        top: -81px;
+        left: -125px;
+    }
+
+    .pratical_info p {
+        grid-column-start: 1;
+    }
+
+    .contact_form h1 {
+        text-align: center;
+    }
+
+    .fa-play {
+        top: 1926px;
+        left: -92px;
+    }
+
+    /* news */
+
+    #news_categories {
+        grid-column-start: 1;
+    }
+
+    .first_section {
+        margin-top: 248px;
+    }
+
+    /* news article */
+
+    .news_article_header {
+        margin: 55vh 40px 40px;
+    }
+
+    .news_article_bodytext {
+        margin: 100px 40px;
+    }
+
+    .news_article_bodytext p {
+        grid-column-end: span 5;
+    }
+
+    .news_only_text p {
+        grid-column-end: span 8;   
+    }
+
+    .news_article_bodytext div {
+        position: relative;
+        max-width: 244px;
+        grid-column-start: 6;
+        grid-template-columns: repeat(3, 94px);
+        left: 40px;
+    }
+
+    .news_article_person_of_interest img {
+        width: 244px;
+    }
 
 }
