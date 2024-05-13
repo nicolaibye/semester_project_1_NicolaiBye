@@ -43,10 +43,6 @@ main {
     max-width: 1440px;
 }
 
-footer {
-    height: fit-content;
-}
-
 body {
     margin: 0;
     font-size: 1.5rem;
@@ -148,12 +144,18 @@ ul {
     align-items: center;
 }
 
+#cookies_button a {
+    padding: 11px;
+}
+
 /* footer */
 
 footer {
     background-color: var(--csm_black);
     padding: 48px 0px;
     color: var(--csm_white);
+    margin-top: 40px;
+    height: fit-content;
 }
 
 footer a {
@@ -988,6 +990,7 @@ nav a bold, footer a bold {
     footer div p {
         position: relative;
         left: 16px;
+        width: 322px;
     }
 
     .newsletter_signup {
@@ -1355,6 +1358,19 @@ nav a bold, footer a bold {
         grid-column-end: span 4;
     }
 
+    .exhibition_space_header h1 {
+        grid-column-end: span 4;
+    }
+
+    .exhibition_space_header p {
+        grid-column-end: span 4;
+        height: min-content;
+    }
+
+    .exhibition_space_cards {
+        margin-top: -120px;
+    }
+
     /* get involved */
 
     .get_involved_section p, .get_involved_section h1, .our_policies p, .our_policies h1, .our_policies ul {
@@ -1365,6 +1381,7 @@ nav a bold, footer a bold {
         grid-template-columns: repeat(4, 97px);
         row-gap: 36px;
         margin-top: 100px;
+        margin-bottom: 100px;
     }
 
     #firstname, #lastname, #email, #subject, #message {
@@ -1379,71 +1396,75 @@ nav a bold, footer a bold {
     /* the museum */
 
     .the_museum_flex_info {
-        grid-template-columns: repeat(4, 94px);
+        grid-template-columns: repeat(4, 97px);
         grid-column: 1 / span 4;
     }
 
-    .the_museum_map {
-        width: 376px;
-        height: 376px;
+    .the_museum_info h1 {
+        grid-column-end: span 4;
     }
 
-    .fa-square {
-        top: -81px;
-        left: -125px;
+    .the_museum_map {
+        width: 100%;
+        height: 388px;
+        grid-column-end: span 4;
+    }
+
+    .fa-circle {
+        top: 1137px;
     }
 
     .pratical_info p {
-        grid-column-start: 1;
-    }
-
-    .contact_form h1 {
-        text-align: center;
+        margin-top: 100px;
+        grid-column-end: span 4;
     }
 
     .fa-play {
-        top: 1926px;
-        left: -92px;
+        top: 1968px;
+        left: -128px;
+    }
+
+    /* our policies */
+
+    .our_policies p, .our_policies h1, .our_policies ul {
+        grid-column-start: 1;
+    }
+
+    .our_policies *, .our_policies ul li {
+        list-style-type: none;
     }
 
     /* news */
 
     #news_categories {
-        grid-column-start: 1;
+        grid-column-end: span 3;
     }
 
     .first_section {
-        margin-top: 248px;
+        margin-top: 148px;
     }
 
     /* news article */
 
     .news_article_header {
-        margin: 55vh 40px 40px;
-    }
-
-    .news_article_bodytext {
-        margin: 100px 40px;
-    }
-
-    .news_article_bodytext p {
-        grid-column-end: span 5;
-    }
-
-    .news_only_text p {
-        grid-column-end: span 8;   
+        margin: 45vh 20px 20px;
     }
 
     .news_article_bodytext div {
-        position: relative;
-        max-width: 244px;
-        grid-column-start: 6;
-        grid-template-columns: repeat(3, 94px);
-        left: 40px;
+        display: none;
     }
 
-    .news_article_person_of_interest img {
-        width: 244px;
+    .news_article_header h1, .news_article_header p {
+        grid-column-end: span 4;
+        text-align: center;
+    }
+
+    .news_article_bodytext p {
+        grid-column-end: span 4;
+    }
+
+    .news_article_bodytext {
+        margin: 100px 20px;
     }
 
 }
