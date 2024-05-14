@@ -1467,10 +1467,10 @@ nav a bold, footer a bold {
 
     /* Tiny Mobile */
 
-@media (max-width: 834px) {
+@media (max-width: 380px) {
 
     main {
-        max-width: 428px;
+        max-width: 320px;
     }
 
     section {
@@ -1478,21 +1478,26 @@ nav a bold, footer a bold {
     }
     
     nav, section, footer {
-        grid-template-columns: repeat(4, 97px);
-        row-gap: 36px;
+        grid-template-columns: repeat(4, 70px);
+        row-gap: 28px;
+        justify-content: center;
     }
 
-    h1 {
-        font-size: 7rem;
-        text-align: center;
-    }
-
-    .nav_time {
+    .logo_name {
         display: none;
     }
 
-    .menu_dropdown, .menu_icon {
-        right: 80px;
+    nav a {
+        grid-column-end: span 2;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .menu_dropdown {
+        right: 0px;
+        width: 280px;
     }
 
     #cookies_button {
@@ -1500,12 +1505,13 @@ nav a bold, footer a bold {
     }
 
     footer ul {
-        grid-column-start: 3;
-        grid-column-end: span 2;
+        grid-column-start: 1;
+        grid-column-end: span 4;
     }
 
     footer a {
         grid-column-start: 1;
+        grid-column-end: span 4;
     }
 
     footer div {
@@ -1513,104 +1519,62 @@ nav a bold, footer a bold {
         grid-column-end: span 4;
     }
 
+    footer div p {
+        position: static;
+        width: 208px;
+        margin: auto;
+    }
+
     .newsletter_signup {
-        width: 280px;
+        width: 170px;
         left: 0px;
     }
 
     .newsletter_button {
-        left: -22px;
+        left: -20px;
     }
 
     .newsletter_button_icon {
         top: -37px;
-        left: 329px;
+        left: 219px;
+    }
+
+    .menu_icon, button, #send {
+        padding: 20px 20px;
+    }
+
+    button a {
+        padding: 20px 0px;
     }
 
     /* home */
 
-    .opening_section {
-        margin: 148px 20px 100px;
-    }
-
-    .opening_section h1 {
-        grid-column-end: span 4;
-    }
-
-    .opening_section div {
-        grid-template-columns: repeat(4, 97px);
-    }
-
-    .opening_section img {
-        position: static;
-        grid-column-end: span 4;
-        height: auto;
-        width: 100%;
+    .header_cta p {
+        display: none;
     }
 
     .header_cta {
-        column-gap: 48px;
-    }
-
-    .goals_home_section h1 {
-        grid-column-end: span 4;
-        top: -270px;
-        text-align: center;
+        justify-content: center;
     }
 
     .goals_home_section div {
-        grid-column-end: span 4;
-        grid-column-start: 1;
-        top: -320px;
+        justify-content: center;
     }
 
     .goals_home_section img {
-        height: 395px;
-        left: -26%;
-        bottom: -1411px;
+        display: none;
     }
 
-    .home_funfact_heading {
-        left: 20px;
+    #goals_home_background_color {
+        height: 825px;
+        top: 1383px;
     }
-
-    .home_funfact {
-        padding: 36px 20px;
-    }
-
-    /* exhibiton spaces */
-
-    .exhibition_spaces h1 {
-        grid-column-end: span 4;
-        margin-bottom: 0px;
-    }
-
-    .exhibition_spaces div {
-        grid-column-end: span 4;
-    }
-
-    .exhibition_card_container {
-        padding: 32px;
+    
+    .explore_home_section {
+        margin-top: 40px;
     }
 
     /* exhibitons */
-
-    .exhibition_space_cards div {
-        grid-column-end: span 4;
-    }
-
-    .exhibition_space_header h1 {
-        grid-column-end: span 4;
-    }
-
-    .exhibition_space_header p {
-        grid-column-end: span 4;
-        height: min-content;
-    }
-
-    .exhibition_space_cards {
-        margin-top: -120px;
-    }
 
     /* get involved */
 
@@ -1619,50 +1583,36 @@ nav a bold, footer a bold {
     }
 
     .contact_form {
-        grid-template-columns: repeat(4, 97px);
-        row-gap: 36px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-
-    #firstname, #lastname, #email, #subject, #message {
-        padding: 16px;
-        flex-basis: 100%;
-    }
-
-    .contact_form_fields {
-        grid-column-end: span 4;
+        grid-template-columns: repeat(4, 70px);
+        row-gap: 28px;
     }
 
     /* the museum */
 
-    .the_museum_flex_info {
-        grid-template-columns: repeat(4, 97px);
-        grid-column: 1 / span 4;
+    .the_museum_flex_info div i {
+        justify-self: auto;
     }
 
-    .the_museum_info h1 {
-        grid-column-end: span 4;
+    .the_museum_adress, .the_museum_phone, .the_museum_day {
+        position: relative;
+        left: -46px;
+    }
+
+    .the_museum_time {
+        position: relative;
+        left: -66px;
+    }
+
+    .the_museum_flex_info {
+        grid-template-columns: repeat(4, 70px);
     }
 
     .the_museum_map {
-        width: 100%;
-        height: 388px;
-        grid-column-end: span 4;
-    }
-
-    .fa-circle {
-        top: 1137px;
-    }
-
-    .pratical_info p {
-        margin-top: 100px;
-        grid-column-end: span 4;
+        height: 280px;
     }
 
     .fa-play {
-        top: 1968px;
-        left: -128px;
+        top: 2990px;
     }
 
     /* our policies */
@@ -1675,10 +1625,14 @@ nav a bold, footer a bold {
         list-style-type: none;
     }
 
+    .our_policies_menu_icon {
+        right: 20px;
+    }
+
     /* news */
 
     #news_categories {
-        grid-column-end: span 3;
+        grid-column-end: span 4;
     }
 
     .first_section {
@@ -1688,25 +1642,7 @@ nav a bold, footer a bold {
     /* news article */
 
     .news_article_header {
-        margin: 45vh 20px 20px;
+        margin: 49vh 20px 20px;
     }
-
-    .news_article_bodytext div {
-        display: none;
-    }
-
-    .news_article_header h1, .news_article_header p {
-        grid-column-end: span 4;
-        text-align: center;
-    }
-
-    .news_article_bodytext p {
-        grid-column-end: span 4;
-    }
-
-    .news_article_bodytext {
-        margin: 100px 20px;
-    }
-
 
 }
