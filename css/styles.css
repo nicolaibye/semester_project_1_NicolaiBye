@@ -935,7 +935,7 @@ nav a bold, footer a bold {
 @media (max-width: 1435px) {
 
     main {
-        max-width: 834px;
+        max-width: 768px;
     }
 
     section {
@@ -944,7 +944,7 @@ nav a bold, footer a bold {
     
     nav, section, footer {
         display: grid;
-        grid-template-columns: repeat(8, 94px);
+        grid-template-columns: repeat(8, 86px);
         row-gap: 24px;
     }
 
@@ -1016,7 +1016,7 @@ nav a bold, footer a bold {
     }
 
     .opening_section div{
-        grid-template-columns: repeat(4, 94px);
+        grid-template-columns: repeat(4, 86px);
         grid-column-end: span 4;
     }
 
@@ -1144,20 +1144,22 @@ nav a bold, footer a bold {
     }
 
     .contact_form {
-        grid-template-columns: repeat(8, 94px);
+        grid-template-columns: repeat(8, 86px);
         grid-column-start: 1;
     }
 
     /* the museum */
 
     .the_museum_flex_info {
-        grid-template-columns: repeat(4, 94px);
+        grid-template-columns: repeat(4, 86px);
         grid-column: 1 / span 4;
     }
 
     .the_museum_map {
-        width: 376px;
-        height: 376px;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        left: 40px;
     }
 
     .fa-square {
@@ -1210,7 +1212,7 @@ nav a bold, footer a bold {
         position: relative;
         max-width: 244px;
         grid-column-start: 6;
-        grid-template-columns: repeat(3, 94px);
+        grid-template-columns: repeat(3, 86px);
         left: 40px;
     }
 
@@ -1222,7 +1224,7 @@ nav a bold, footer a bold {
 
 /* Mobile */
 
-@media (max-width: 834px) {
+@media (max-width: 768px) {
 
     main {
         max-width: 428px;
