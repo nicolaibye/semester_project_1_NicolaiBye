@@ -466,7 +466,7 @@ nav a .bold, footer a .bold {
 
 /* exhibitions */
 
-#exhibition_tablet_photo {
+#exhibition_tablet_photo_cosmology, #exhibition_tablet_photo_evolution, #exhibition_tablet_photo_biology, #exhibition_tablet_photo_robotics, #exhibition_tablet_photo_ecology {
     display: none;
 }
 
@@ -1141,7 +1141,7 @@ nav a .bold, footer a .bold {
         padding: 40px;
     }
 
-    #exhibition_tablet_photo {
+    #exhibition_tablet_photo_cosmology, #exhibition_tablet_photo_evolution, #exhibition_tablet_photo_biology, #exhibition_tablet_photo_robotics, #exhibition_tablet_photo_ecology {
         display: block;
         position: static;
         width: 100%;
