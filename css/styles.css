@@ -47,7 +47,7 @@ body {
     background-color: var(--csm_white);
 }
 
-button, body, #send {
+.button, body, #send {
     text-transform: uppercase;
 }
 
@@ -82,17 +82,17 @@ a {
     text-decoration: none;
 }
 
-p, .our_policies bold {
+p, .our_policies .bold {
     line-height: 140%; /* 21px */
     letter-spacing: 3px;
     text-align: justify;
 }
 
-bold {
+.bold {
     font-weight: 800;
 }
 
-button, .menu_icon, #send {
+.button, .menu_icon, #send {
     padding: 20px 0px;
     font-size: 1.8rem;
     font-weight: 700;
@@ -102,9 +102,12 @@ button, .menu_icon, #send {
     box-shadow: var(--csm_dropshadow);
 }
 
-button a, #send {
+.button , #send {
     color: var(--csm_yellow);
     padding: 20px 28px;
+    display: block;
+    max-width: fit-content;
+    text-align: center;
 }
 
 ul {
@@ -140,7 +143,7 @@ ul {
     align-items: center;
 }
 
-#cookies_button a {
+#cookies_button {
     padding: 11px;
 }
 
@@ -305,7 +308,7 @@ nav a {
     gap: 12px;
     color: var(--csm_black);
 }
-nav a bold, footer a bold {
+nav a .bold, footer a .bold {
     font-size: 4.8rem;
     font-weight: 600;
 }
@@ -336,7 +339,7 @@ nav a bold, footer a bold {
     margin: 100px;
 }
 
-.opening_section bold{
+.opening_section .bold{
     color: var(--csm_purple);
 }
 
@@ -366,7 +369,7 @@ nav a bold, footer a bold {
     margin: 48px;
 }
 
-.goals_home_section div button {
+.goals_home_section div .button {
     margin-top: 48px;
 }
 
@@ -375,14 +378,14 @@ nav a bold, footer a bold {
     grid-column-end: span 12;
 }
 
-.goals_home_section bold {
+.goals_home_section .bold {
     color: var(--csm_red);
 }
 
 .goals_home_section img {
     position: absolute;
     z-index: -1;
-    height: 852px;
+    height: 851px;
     left: -20%;
 }
 
@@ -403,7 +406,7 @@ nav a bold, footer a bold {
 #goals_home_background_color {
     position: absolute;
     background-color: var(--csm_yellow);
-    height: 540px;
+    height: 528px;
     width: 100%;
     margin: 0px;
     left: 0px;
@@ -415,7 +418,7 @@ nav a bold, footer a bold {
     grid-column-end: span 4;
 }
 
-.explore_home_section div p, .explore_home_section div button, .exhibition_card_container p, .exhibition_card_container button{
+.explore_home_section div p, .explore_home_section div .button, .exhibition_card_container p, .exhibition_card_container .button{
     margin-top: 24px;
 }
 
@@ -446,7 +449,7 @@ nav a bold, footer a bold {
     grid-column-end: span 12;
 }
 
-.home_funfact bold {
+.home_funfact .bold {
     color: var(--csm_red);
 }
 
@@ -857,13 +860,13 @@ nav a bold, footer a bold {
     background-blend-mode: screen, color, normal;
     left: 0px;
     top: 0px;
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
     z-index: -1;
 }
 
 .exhibition_space_cards {
-    margin-top: -228px;
+    margin-top: 100px;
     justify-items: center;
 }
 
@@ -877,7 +880,7 @@ nav a bold, footer a bold {
 }
 
 .exhibition_space_header {
-    height: 100vh;
+    height: fit-content;
     grid-template-rows: auto 1fr;
 }
 
@@ -894,7 +897,11 @@ nav a bold, footer a bold {
     background: linear-gradient(0deg, rgba(175, 105, 240, 0.70) 0%, rgba(175, 105, 240, 0.70) 100%), linear-gradient(0deg, var(--csm_purple, #af69f0) 0%, var(--csm_purple, #af69f0) 100%), url(../images/moon_phases.jpg) lightgray 50% / cover no-repeat;
 }
 
-.cosmology_card {
+.cosmology_card, .evolution_card {
+    margin-top: 1013px;
+}
+
+.cosmology_card * {
     background-color: var(--csm_purple); 
 }
 
@@ -902,7 +909,7 @@ nav a bold, footer a bold {
     background: linear-gradient(0deg, rgba(250, 169, 22, 0.70) 0%, rgba(250, 169, 22, 0.70) 100%), linear-gradient(0deg, var(--CSM-Yellow, #faa916) 0%, var(--CSM-Yellow, #faa916) 100%), url(../images/skeletons.jpg) lightgray 50% / cover no-repeat;
 }
 
-.evolution_card {
+.evolution_card * {
     background-color: var(--csm_yellow); 
 }
 
@@ -911,6 +918,10 @@ nav a bold, footer a bold {
 }
 
 .biology_card {
+    margin-top: 1034px;
+}
+
+.biology_card * {
     background-color: var(--csm_red); 
 }
 
@@ -919,6 +930,10 @@ nav a bold, footer a bold {
 }
 
 .robotics_card {
+    margin-top: 887px;
+}
+
+.robotics_card * {
     background-color: var(--csm_blue); 
 }
 
@@ -927,6 +942,10 @@ nav a bold, footer a bold {
 }
 
 .ecology_card {
+    margin-top: 992px;
+}
+
+.ecology_card * {
     background-color: var(--csm_green); 
 }
 
@@ -1133,8 +1152,36 @@ nav a bold, footer a bold {
 
     /* exhibitons */
 
+    .exhibition_space_header {
+        justify-content: center;
+    }
+
+    .exhibition_space_header h1 {
+        grid-column-end: span 6;
+    }
+
+    .exhibition_space_header p, .exhibition_space_header h1 {
+        grid-column-start: 2;
+    }
+
     .exhibition_space_cards div {
         grid-column-end: span 8;
+    }
+
+    .cosmology_card {
+        margin-top: 1033px;
+    }
+
+    .evolution_card, .biology_card {
+        margin-top: 938px;
+    }
+
+    .robotics_card {
+        margin-top: 907px;
+    }
+
+    .ecology_card {
+        margin-top: 896px;
     }
 
     /* get involved */
@@ -1329,6 +1376,10 @@ nav a bold, footer a bold {
         top: -264px;
     }
 
+    .goals_home_section div .button {
+        margin: 48px auto;
+    }
+
     .goals_home_section img {
         display: none;
     }
@@ -1358,6 +1409,10 @@ nav a bold, footer a bold {
 
     /* exhibitons */
 
+    .exhibition_space_header p, .exhibition_space_header h1 {
+        grid-column-start: 1;
+    }
+
     .exhibition_space_cards div {
         grid-column-end: span 4;
     }
@@ -1371,8 +1426,20 @@ nav a bold, footer a bold {
         height: min-content;
     }
 
-    .exhibition_space_cards {
-        margin-top: -120px;
+    .cosmology_card {
+        margin-top: 901px;
+    }
+
+    .evolution_card, .biology_card {
+        margin-top: 898px;
+    }
+
+    .robotics_card {
+        margin-top: 733px;
+    }
+
+    .ecology_card {
+        margin-top: 814px;
     }
 
     /* get involved */
@@ -1548,12 +1615,8 @@ nav a bold, footer a bold {
         left: 219px;
     }
 
-    .menu_icon, button, #send {
+    .menu_icon, .button, #send {
         padding: 20px 20px;
-    }
-
-    button a {
-        padding: 20px 0px;
     }
 
     /* home */
@@ -1576,7 +1639,7 @@ nav a bold, footer a bold {
 
     #goals_home_background_color {
         height: 825px;
-        top: 1383px;
+        top: 1433px;
     }
     
     .explore_home_section {
@@ -1584,6 +1647,26 @@ nav a bold, footer a bold {
     }
 
     /* exhibitons */
+
+    .cosmology_card {
+        margin-top: 909px;
+    }
+
+    .evolution_card {
+        margin-top: 912px;
+    }
+
+    .biology_card {
+        margin-top: 891px;
+    }
+
+    .robotics_card {
+        margin-top: 678px;
+    }
+
+    .ecology_card {
+        margin-top: 807px;
+    }
 
     /* get involved */
 
