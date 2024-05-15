@@ -60,7 +60,7 @@ section {
     margin: 248px 100px 100px;
 }
 
-nav, section, footer {
+nav, section, footer, .news_article_bodytext {
     display: grid;
     grid-template-columns: repeat(12, 103px);
     row-gap: 24px;
@@ -641,7 +641,7 @@ nav a .bold, footer a .bold {
 }
 
 .contact_us_section {
-    margin-top: 0px;
+    margin-top: 100px;
     justify-content: center;
 }
 
@@ -738,7 +738,6 @@ nav a .bold, footer a .bold {
 }
 
 .pratical_info p {
-    
     grid-column-start: 3;
     grid-column-end: span 8;
 }
@@ -961,7 +960,7 @@ nav a .bold, footer a .bold {
         margin: 248px 40px 40px;
     }
     
-    nav, section, footer {
+    nav, section, footer, .news_article_bodytext {
         display: grid;
         grid-template-columns: repeat(8, 86px);
         row-gap: 24px;
@@ -1281,7 +1280,7 @@ nav a .bold, footer a .bold {
         margin: 148px 20px 20px;
     }
     
-    nav, section, footer {
+    nav, section, footer, .news_article_bodytext {
         grid-template-columns: repeat(4, 80px);
         row-gap: 36px;
     }
@@ -1451,7 +1450,6 @@ nav a .bold, footer a .bold {
     .contact_form {
         grid-template-columns: repeat(4, 80px);
         row-gap: 36px;
-        margin-top: 100px;
         margin-bottom: 100px;
     }
 
@@ -1487,13 +1485,19 @@ nav a .bold, footer a .bold {
     }
 
     .pratical_info p {
-        margin-top: 100px;
         grid-column-end: span 4;
     }
 
     .fa-play {
         top: 1968px;
         left: -128px;
+    }
+
+    .contact_us_section {
+        display: grid;
+        grid-template-columns: repeat(4, 80px);
+        row-gap: 36px;
+        grid-column-start: 1;
     }
 
     /* our policies */
@@ -1553,7 +1557,7 @@ nav a .bold, footer a .bold {
         margin: 148px 20px 20px;
     }
     
-    nav, section, footer {
+    nav, section, footer, .news_article_bodytext {
         grid-template-columns: repeat(4, 70px);
         row-gap: 28px;
         justify-content: center;
@@ -1705,6 +1709,11 @@ nav a .bold, footer a .bold {
 
     .fa-play {
         top: 2990px;
+    }
+
+    .contact_us_section {
+        grid-template-columns: repeat(4, 70px);
+        row-gap: 28px;
     }
 
     /* our policies */

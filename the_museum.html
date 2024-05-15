@@ -47,7 +47,7 @@
     </header>
     
     <main>
-        <button id="cookies_button"><a href="our_policies.html"><i class="fa-solid fa-cookie-bite"></i></a></button>
+        <a id="cookies_button" class="button" href="our_policies.html"><i class="fa-solid fa-cookie-bite"></i></a>
         <section class="the_museum_info">
             <h1>The museum</h1>
             <div class="the_museum_flex_info">
@@ -68,23 +68,23 @@
             <iframe class="the_museum_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2105.6780688242948!2d7.991560313637852!3d58.14557307395458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4638025e470dc827%3A0x8a38e72716dd7602!2sR%C3%A5dhusgata%2011%2C%204611%20Kristiansand!5e0!3m2!1sno!2sno!4v1714480915468!5m2!1sno!2sno" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         
-        <section class="contact_us_section pratical_info">
-            <p><bold>Admission</bold><br>
+        <div class="contact_us_section pratical_info">
+            <p><span class="bold">Admission</span><br>
                 The entrance is free for all.
                 <br><br>
                 There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum.
                 <br><br>
                 If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.
                 <br><br>
-                <bold>Accessibility</bold><br>
+                <span class="bold">Accessibility</span><br>
                 The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.
                 <br><br>
-                <bold>Food and drink</bold><br>
+                <span class="bold">Food and drink</span><br>
                 There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.
                 <br><br>
-                <bold>Shop</bold><br>
+                <span class="bold">Shop</span><br>
                 Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
-        </section>
+            </div>
 
         <section class="contact_us_section">
             <div class="contact_form">
@@ -96,12 +96,11 @@
                     <input type="text" name="lastname" id="lastname" placeholder="Last name" required>
 
                     <input type="email" id="email" name="email" placeholder="E-mail" required>
-                    <input type="subject" id="subject" name="subject" placeholder="Subject" required>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
 
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
                 
                     <input type="submit" name="send" id="send" value="Send message">
-                </form>
                 </form>
             </div>
             <i class="fa-solid fa-square"></i>
