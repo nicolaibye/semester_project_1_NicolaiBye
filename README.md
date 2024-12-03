@@ -46,6 +46,6 @@ If you wish to have your code reviewed please contact me on one of my socials.
 
 ## Contact
 
-[Instagram](www.twitter.com)
+[Instagram](https://www.instagram.com/nicolai_designs/)
 
-[LinkedIn](https://www.instagram.com/nicolai_designs/)
+[LinkedIn](https://www.linkedin.com/in/nicolai-bye/)
