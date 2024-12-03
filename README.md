@@ -3,6 +3,7 @@
 ![image](https://github.com/user-attachments/assets/27b21fe8-6588-4c61-82b8-bd4b435eecfc)
 
 To finish up our semester we were given a clean brief with a made-up client where we were tasked with taking the project from start to finish with design, HTML and CSS.
+[The website](https://nicolaibye.github.io/semester_project_1_NicolaiBye/)
 
 ## Description
 
